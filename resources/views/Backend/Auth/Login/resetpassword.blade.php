@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentelella Alela! | </title>
+
+    <!-- Bootstrap -->
+    <link href="{{asset('Backend/gentelella-master/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{{asset('Backend/gentelella-master/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="{{asset('Backend/gentelella-master/vendors/nprogress/nprogress.css')}}" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="{{asset('Backend/gentelella-master/vendors/animate.css/animate.min.css')}}" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="{{asset('Backend/gentelella-master/build/css/custom.min.css')}}" rel="stylesheet">
+</head>
+
+<body class="login">
+     @include('sweetalert::alert')
+    <div>
+        <div class="login_wrapper">
+            <div class="animate form login_form">
+                <section class="login_content">
+                    <form action="{{route('dashboard.resetpassword')}}" method="POST">
+                        @csrf
+                        <h1>Reset Password</h1>
+                        @if (Session::has('logerror'))
+                        <p class="text-danger">{{ Session::get('logerror') }}</p>
+                        @endif
+                        <div>
+                            <input type="email" name="email" class="form-control" placeholder="Email" required="" />
+                        </div>
+                        <div>
+                            <input type="password" name="new_password" class="form-control" placeholder="New Password"
+                                required="" />
+                        </div>
+                        <div>
+                            <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password"
+                                required="" />
+                        </div>
+                        @error('confirm_password')
+                            <p class="text-danger">{{$message}}</p>
+                        @enderror
+                        <div>
+                            <button type="submit" class="btn btn-default submit" type="submit">Submit</button>
+                            <a class="reset_pass" href="{{route('login')}}">Signin</a>
+                        </div>
+
+
+                        <div class="separator">
+
+                            <br />
+
+                            <div>
+                                <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+                                <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and
+                                    Terms</p>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

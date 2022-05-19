@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ShopR - eCommerce Template</title>
+    <meta name="description" content="">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Normalize/Reset CSS-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Modernizr Script for Old Browser Support-->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body id="welcome">
+
+    <aside class="left-sidebar">
+        <div class="logo">
+            <h1 style="font-size: 30px;">
+                <a href="#welcome" style="color: #fff;">
+                        ShopR
+                    </a>
+            </h1>
+        </div>
+        <nav class="left-nav">
+            <ul id="nav">
+                <li class="current"><a href="#welcome">Welcome</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#navigation">Topbar, Navigation, Logo and Rav-slider</a></li>
+                <li><a href="#other-sections">Other Sections</a></li>
+                <li><a href="#css-structure">CSS Files</a></li>
+                <li><a href="#javascript">JavaScript Libraries</a></li>
+                <li><a href="#color-presets">Changing Color Presets</a></li>
+                <li><a href="#contact-form">Contact Form Configuration</a></li>
+				<li><a href="#google-map">Google Map</a></li>
+                <li><a href="#credit">Source and Credit</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div id="main-wrapper">
+        <div class="main-content">
+            <section id="welcome">
+                <div class="content-header">
+                    <h1>ShopR - eCommerce HTML5 & Bootstrap Template</h1>
+                </div>
+                <div class="welcome">
+
+                    <h2 class="twenty">Welcome To ShopR Template Documentation.</h2>
+
+                    <p>Firstly, a huge thanks for purchasing this theme, your support is truly appreciated!</p>
+
+                    <p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document, feel free to post your issue in our <a href="http://uideck.com/support/">Support Forum</a></p>
+                    <img style="max-width:100%" src="img/banner.png">
+
+                </div>
+
+            </section>
+
+            <section id="installation">
+                <div class="content-header">
+                    <h1>ShopR - eCommerce HTML5 & Bootstrap Template</h1>
+                </div>
+                <h2 class="title">Installing Template.</h2>
+
+                <div class="section-content">
+                    <ol>
+                        <li>After unzip the download pack, you'll found a Template Folder with all the files.</li>
+                        <li>You can view this Template in any browser, you can display or edit the Template without an internet connection.</li>
+                        <li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="http://sourceforge.net/projects/filezilla/files/FileZilla_Client/3.9.0.2/FileZilla_3.9.0.2_win32-setup.exe/download?accel_key=57%3A1407264553%3Ahttps%253A//filezilla-project.org/download.php%253Ftype%253Dclient%3A59f6c662%2460e732e1e76bd06acbe3bb9c56ae06e7b09c3e6a&click_id=31d5cc44-1cd1-11e4-a846-0200ac1d1d9f&source=accel">Filezilla</a>) and upload the content of the Template on your server root.</li>
+                        <li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
+                    </ol>
+                </div>
+
+                <div class="section-content">
+                    <h2 class="title">Homepage View</h2>
+                    <img style="max-width:100%" src="img/home.png">
+                </div>
+
+            </section>
+
+            <section id="navigation">
+                <h2 class="title">Topbar, Navigation, Logo and Rav-slider</h2>
+                <pre class="brush:html">  
+				  	<!-- Header Section Start -->
+				    <div class="header">    
+
+				      <!-- Start Top Bar -->
+				      <div class="top-bar">
+				        <div class="container">
+				          <div class="row">
+				            <div class="col-md-6 col-sm-4">
+				              <div class="language-wrapper">
+				                <div class="box-language">
+				                  <form id="form-language">
+				                    <div class="btn-group toggle-wrap">
+				                      <span class="toggle">
+				                        <span><img src="assets/img/language/flag-lang.png" alt="English" title="English" height="11" width="16"> English</span>
+				                        <span class="hidden">Language</span>
+				                      </span>
+				                      <ul style="display: none;" class="toggle_cont pull-right">
+				                        <li>
+				                        <button class="language-select selected" type="button" name="en-gb">
+				                        <img src="assets/img/language/en-gb.png" alt="English" title="English" height="11" width="16">
+				                        English </button>
+				                        </li>
+				                        <li>
+				                        <button class="language-select" type="button" name="de-DE">
+				                        <img src="assets/img/language/de-DE.png" alt="Deutsch" title="Deutsch" height="11" width="16">
+				                        Deutsch </button>
+				                        </li>
+				                        <li>
+				                        <button class="language-select" type="button" name="ru-ru">
+				                        <img src="assets/img/language/ru-ru.png" alt="Русский" title="Русский" height="11" width="16">
+				                        Русский </button>
+				                        </li>
+				                      </ul>
+				                    </div>
+				                  </form>
+				                </div>
+				                <div class="box-currency">
+				                  <form method="post" id="form-currency">
+				                    <div class="btn-group toggle-wrap">
+				                      <span class="toggle">
+				                        $USD                                              
+				                      </span>
+				                      <ul class="toggle_cont pull-right">
+				                        <li>
+				                        <button class="currency-select selected" type="button" name="USD">
+				                        $ USD </button>
+				                        </li>
+				                        <li>
+				                        <button class="currency-select" type="button" name="EUR">
+				                        € EUR
+				                        </button>
+				                        </li>
+				                        <li>
+				                        <button class="currency-select" type="button" name="GBP">
+				                        £ GBP </button>
+				                        </li>
+				                      </ul>
+				                    </div>
+				                  </form>
+				                </div>
+				                
+				                <a href="#"><i class="icon-phone"></i> Call Us: (123) 456- 789</a>
+				              </div>              
+				              <div class="clear"></div>              
+				            </div>
+				            <div class="col-md-6 col-sm-8">              
+				              <!-- shopping cart end -->
+				              <div class="search-area">
+				                <form>
+				                  <div class="control-group">
+				                    <ul class="categories-filter animate-dropdown">
+				                      <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="category.html">Categories <span class="caret"></span></a>
+				                        <ul class="dropdown-menu">
+				                          <li class="menu-header">Clothing</li>
+				                          <li><a tabindex="-1" href="#">- Men</a></li>
+				                          <li><a tabindex="-1" href="#">- Women</a></li>
+				                          <li><a tabindex="-1" href="#">- Boys</a></li>
+				                          <li><a tabindex="-1" href="#">- Girls</a></li>
+				                          <li class="menu-header">Electronics</li>
+				                          <li><a tabindex="-1" href="#">- Laptops</a></li>
+				                          <li><a tabindex="-1" href="#">- Desktops</a></li>
+				                          <li><a tabindex="-1" href="#">- Cameras</a></li>
+				                          <li><a tabindex="-1" href="#">- Mobile Phones</a></li>
+				                        </ul>
+				                      </li>
+				                    </ul>
+				                    <input class="search-field" placeholder="Search here...">
+				                    <a class="search-button" href="#"><i class="icon-magnifier"></i></a> 
+				                  </div>
+				                </form>
+				              </div> 
+				              <!-- shopping cart start -->
+				              <div class="shop-cart">
+				                <ul>                
+				                  <li><a class="cart-icon cart-btn" href="wishlist.html"><span class="icon-heart"></span></a></li>
+				                  <li>
+				                    <a href="#" class="cart-icon cart-btn"><i class="icon-basket"></i><span class="cart-label">3</span></a>
+				                    <div class="cart-box">
+				                      <div class="popup-container">
+				                        <div class="cart-entry">
+				                          <a href="#" class="image">
+				                            <img src="assets/img/products/product-menu-1.jpg"  alt="">
+				                          </a>
+				                          <div class="content">
+				                            <a href="#" class="title">Pullover Batwing</a>
+				                            <p class="quantity">Quantity: 3</p>
+				                            <span class="price">$45.00</span>
+				                          </div>
+				                          <div class="button-x">
+				                            <i class="icon-close"></i>
+				                          </div>
+				                        </div>
+				                        <div class="cart-entry">
+				                          <a href="#" class="image">
+				                            <img src="assets/img/products/product-menu-2.jpg"  alt="">
+				                          </a>
+				                          <div class="content">
+				                            <a href="#" class="title">Pullover Batwing</a>
+				                            <p class="quantity">Quantity: 3</p>
+				                            <span class="price">$90.00</span>
+				                          </div>
+				                          <div class="button-x">
+				                            <i class="icon-close"></i>
+				                          </div>
+				                        </div>
+				                        <div class="summary">
+				                          <div class="subtotal">Sub Total</div>
+				                          <div class="price-s">$210.5</div>
+				                        </div>
+				                        <div class="cart-buttons">
+				                            <a href="#" class="btn btn-border-2">View Cart</a>
+				                            <a href="#" class="btn btn-common">Checkout</a>
+				                            <div class="clear"></div>
+				                        </div>
+				                      </div>
+				                    </div>
+				                  </li>  
+				                </ul> 
+				              </div>             
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				      <!-- End Top Bar -->    
+
+				      <!-- Start  Logo & Naviagtion  -->
+				      <nav class="navbar navbar-default" data-spy="affix" data-offset-top="50">
+				        <div class="container">
+				          <div class="row">
+				            <div class="navbar-header">
+				              <!-- Stat Toggle Nav Link For Mobiles -->
+				              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				                <i class="fa fa-bars"></i>
+				              </button>
+				              <a class="navbar-brand" href="index.html">
+				                <img src="assets/img/logo.png" alt="">
+				              </a> 
+				            </div>
+				            <div class="navbar-collapse collapse">
+				              <!-- Start Navigation List -->
+				              <ul class="nav navbar-nav">
+				                <li>
+				                  <a class="active" href="index.html">Home <span class="caret"></span></a>
+				                  <ul class="dropdown">
+				                    <li>
+				                      <a class="active" href="index.html">
+				                        Home V1 
+				                      </a>
+				                    </li>  
+				                    <li>
+				                      <a href="index-2.html">
+				                        Home V2
+				                      </a>
+				                    </li>      
+				                  </ul>
+				                </li>
+				                <li>
+				                  <a href="about.html">
+				                  About
+				                  </a>
+				                </li>
+				                <li>
+				                  <a href="#">Catalog <span class="caret"></span></a>
+				                  <div class="dropdown mega-menu megamenu1">
+				                    <div class="row">
+				                      <div class="col-sm-3 col-xs-12">
+				                        <ul class="menulinks">
+				                          <li class="maga-menu-title">
+				                            <a href="#">Men</a>
+				                          </li>
+				                          <li><a href="category.html">Clothing</a></li>
+				                          <li><a href="category.html">Handbags</a></li>
+				                          <li><a href="category.html">Maternity</a></li>
+				                          <li><a href="category.html">Jewelry</a></li>
+				                          <li><a href="category.html">Scarves</a></li>
+				                        </ul>
+				                      </div>
+				                      <div class="col-sm-3 col-xs-12">
+				                        <ul class="menulinks">
+				                          <li class="maga-menu-title">
+				                            <a href="#">Women</a>
+				                          </li>
+				                          <li><a href="category.html">Handbags</a></li>
+				                          <li><a href="category.html">Jewelry</a></li>
+				                          <li><a href="category.html">Clothing</a></li>
+				                          <li><a href="category.html">Watches</a></li>
+				                          <li><a href="category.html">Hats</a></li>
+				                        </ul>
+				                      </div>
+				                      <div class="col-sm-3 col-xs-12">
+				                        <ul class="menulinks">
+				                          <li class="maga-menu-title">
+				                            <a href="#">Accessories</a>
+				                          </li>
+				                          <li><a href="category.html">Belts</a></li>
+				                          <li><a href="category.html">Scarves</a></li>
+				                          <li><a href="category.html">Hats</a></li>
+				                          <li><a href="category.html">Ties</a></li>
+				                          <li><a href="category.html">Handbags</a></li>
+				                        </ul>
+				                      </div>
+				                      <div class="col-sm-3 col-xs-12">
+				                        <span class="block-last">
+				                          <img src="assets/img/block_menu.jpg"  alt="">
+				                        </span>
+				                      </div>
+				                    </div>                    
+				                  </div>
+				                </li>
+				                <li>
+				                  <a href="#">Shop <span class="caret"></span></a>
+				                  <div class="dropdown mega-menu megamenu2">
+				                    <div class="row">
+				                      <div class="col-sm-3 col-xs-12">
+				                        <ul class="menulinks">
+				                          <li class="maga-menu-title">
+				                            <a href="#">Shop Types</a>
+				                          </li>
+				                          <li><a href="shop.html">Shop</a></li>
+				                          <li><a href="shop-grid.html">Shop Grid Sidebar</a></li>
+				                          <li><a href="shop-list.html">Shop List Sidebar</a></li>
+				                          <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+				                          <li><a href="product-details.html">Product Details</a></li>
+				                        </ul>
+				                      </div>
+				                      <div class="col-sm-3 col-xs-12">
+				                        <ul class="menulinks">
+				                          <li class="maga-menu-title">
+				                            <a href="#">Shop Pages</a>
+				                          </li>  
+				                          <li><a href="shopping-cart.html">Cart Page</a></li>
+				                          <li><a href="checkout.html">Checkout Page</a></li>
+				                          <li><a href="wishlist.html">Wishlist</a></li>  
+				                          <li><a href="order.html">Your Order</a></li>
+				                          <li><a href="login.html">Login</a></li>
+				                          <li><a href="login-form.html">My Account</a></li>
+				                        </ul>
+				                      </div>
+				                    </div>                    
+				                  </div>
+				                </li>
+				                <li>
+				                  <a href="#">Pages <span class="caret"></span></a>
+				                  <ul class="dropdown">
+				                    <li>
+				                      <a href="about.html">
+				                      About Us
+				                      </a>
+				                    </li>
+				                    <li>
+				                      <a href="services.html">
+				                      Services
+				                      </a>
+				                    </li>
+				                    <li>
+				                      <a href="contact.html">
+				                      Contact Us
+				                      </a>
+				                    </li>                    
+				                    <li>
+				                      <a href="product-details.html">
+				                      Product Details
+				                      </a>
+				                    </li>
+				                    <li>
+				                      <a href="team.html">
+				                      Team Member
+				                      </a>
+				                    </li>
+				                    <li>
+				                      <a href="checkout.html">
+				                      Checkout
+				                      </a>
+				                    </li>
+				                    <li>
+				                      <a href="shopping-cart.html">
+				                      Shopping cart
+				                      </a>
+				                    </li>
+				                     <li>
+				                      <a href="faq.html">
+				                      FAQs
+				                      </a>
+				                    </li>
+				                     <li>
+				                      <a href="wishlist.html">
+				                      Wishlist
+				                      </a>
+				                    </li>
+				                     <li>
+				                      <a href="404.html">
+				                      404 Error
+				                      </a>
+				                    </li>
+				                  </ul>
+				                </li>
+				                <li>
+				                  <a href="#">Blog <span class="caret"></span></a>
+				                  <ul class="dropdown">                    
+				                    <li>
+				                      <a href="blog.html">
+				                      Blog Right Sidebar
+				                      </a>
+				                    </li>
+				                    <li>
+				                      <a href="blog-left-sidebar.html">
+				                      Blog Left Sidebar
+				                      </a>
+				                    </li>
+				                    <li>
+				                      <a href="blog-full-width.html">
+				                      Blog Full Width
+				                      </a>
+				                    </li>
+				                    <li>
+				                      <a href="blog-details.html">
+				                      Blog Details
+				                      </a>
+				                    </li>
+				                  </ul>
+				                </li>
+				                <li>
+				                  <a href="contact.html">
+				                  Contact
+				                  </a>
+				                </li>
+				              </ul>
+				              <!-- End Navigation List -->
+
+				              <div class="icon-right pull-right">
+				                <div class="text-right">  
+				                  <!-- account menu start -->
+				                  <div class="account link-inline">
+				                    <div class="dropdown text-right">
+				                      <a href="#" aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown">   
+				                      <span class="icon-user"></span> Account <span class="icon-arrow-down"></span>
+				                      </a>
+				                      <ul class="dropdown-menu">
+				                        <li><a href="login-form.html"><span class="icon icon-user"></span>My Account</a></li>
+				                        <li><a href="wishlist.html"><span class="icon icon-heart"></span>My Wishlist</a></li>
+				                        <li><a href="compare.html"><span class="icon icon-graph"></span>Compare</a></li>
+				                        <li><a href="checkout.html"><span class="icon icon-check"></span>Checkout</a></li>
+				                        <li><a href="login.html"><span class="icon icon-lock"></span>Log In</a></li>
+				                        <li><a href="register.html"><span class="icon icon-user-follow"></span>Create an account</a></li>
+				                        <li><a href="#"><span class="icon icon-close"></span>close</a></li>
+				                      </ul>
+				                    </div>
+				                  </div>
+				                  <!-- account menu end -->                        
+				                </div>
+				              </div>  
+				            </div>
+				          </div>
+				        </div>
+				        <!-- End Header Logo & Naviagtion -->
+
+				        <!-- Mobile Menu Start -->
+				        <ul class="mobile-menu">
+				          <li>
+				            <a class="active" href="index.html">
+				              Home
+				            </a>
+				            <ul class="dropdown">
+				              <li>
+				                <a class="active" href="index.html">Home V1</a>
+				              </li>  
+				              <li>
+				                <a href="index-2.html">Home V2</a>
+				              </li>    
+				            </ul>
+				          </li>
+				          <li>
+				            <a href="about.html">About</a>
+				          </li>
+				          <li>
+				            <a href="#">Catalog</a>
+				            <ul class="dropdown menulinks">
+				              <li class="maga-menu-title">
+				                <a href="#">Men</a>
+				              </li>
+				              <li><a href="category.html">Clothing</a></li>
+				              <li><a href="category.html">Handbags</a></li>
+				              <li><a href="category.html">Maternity</a></li>
+				              <li><a href="category.html">Jewelry</a></li>
+				              <li><a href="category.html">Scarves</a></li>
+				              <li class="maga-menu-title">
+				                <a href="#">Women</a>
+				              </li>
+				              <li><a href="category.html">Handbags</a></li>
+				              <li><a href="category.html">Jewelry</a></li>
+				              <li><a href="category.html">Clothing</a></li>
+				              <li><a href="category.html">Watches</a></li>
+				              <li><a href="category.html">Hats</a></li>
+				              <li class="maga-menu-title">
+				                <a href="#">Accessories</a>
+				              </li>
+				              <li><a href="category.html">Belts</a></li>
+				              <li><a href="category.html">Scarves</a></li>
+				              <li><a href="category.html">Hats</a></li>
+				              <li><a href="category.html">Ties</a></li>
+				              <li><a href="category.html">Handbags</a></li>
+				            </ul>
+				          </li>
+				          <li>
+				            <a href="#">Shop</a>
+				            <ul class="menulinks">
+				              <li class="maga-menu-title">
+				                <a href="#">Shop Types</a>
+				              </li>
+				              <li><a href="shop.html">Shop</a></li>
+				              <li><a href="shop-grid.html">Shop Grid Sidebar</a></li>
+				              <li><a href="shop-list.html">Shop List Sidebar</a></li>
+				              <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+				              <li><a href="product-details.html">Product Details</a></li>
+				              <li class="maga-menu-title">
+				                <a href="#">Shop Pages</a>
+				              </li>  
+				              <li><a href="shopping-cart.html">Cart Page</a></li>
+				              <li><a href="checkout.html">Checkout Page</a></li>
+				              <li><a href="wishlist.html">Wishlist</a></li>  
+				              <li><a href="order.html">Your Order</a></li>
+				              <li><a href="login.html">Login</a></li>
+				              <li><a href="login-form.html">My Account</a></li>
+				            </ul>
+				          </li>
+				          <li>
+				            <a href="#">Pages <span class="caret"></span></a>
+				            <ul class="dropdown">
+				              <li>
+				                <a href="about.html">About Us</a>
+				              </li>
+				              <li>
+				                <a href="services.html">Services</a>
+				              </li>
+				              <li>
+				                <a href="contact.html">Contact Us</a>
+				              </li>                    
+				              <li>
+				                <a href="product-details.html">Product Details</a>
+				              </li>
+				              <li>
+				                <a href="team.html">Team Member</a>
+				              </li>
+				              <li>
+				                <a href="checkout.html">Checkout</a>
+				              </li>
+				              <li>
+				                <a href="shopping-cart.html">Shopping cart</a>
+				              </li>
+				               <li>
+				                <a href="faq.html">FAQs</a>
+				              </li>
+				               <li>
+				                <a href="wishlist.html">Wishlist</a>
+				              </li>
+				               <li>
+				                <a href="404.html">404 Error</a>
+				              </li>
+				            </ul>
+				          </li>
+				          <li>
+				            <a href="#">Blog</a>
+				            <ul class="dropdown">                    
+				              <li>
+				                <a href="blog.html">Blog Right Sidebar</a>
+				              </li>
+				              <li>
+				                <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
+				              </li>
+				              <li>
+				                <a href="blog-full-width.html">Blog Full Width</a>
+				              </li>
+				              <li>
+				                <a href="blog-details.html">Blog Details</a>
+				              </li>
+				            </ul>
+				          </li>
+				          <li>
+				            <a href="contact.html">Contact</a>
+				          </li>
+				        </ul>
+				        <!-- Mobile Menu End -->
+				      </nav>
+
+				    </div>
+				    <!-- Header Section End --> 	             				
+              	</pre>
+            </section>
+
+            <section id="other-sections">
+                <h2 class="title">All other homepage section and Elements. Such as: Feature, New Arrivals, Featured Products, Services, Testimonial, Blog, and Client Logo.</h2>
+                <pre class="brush:html">
+					<!-- Feature ctg Section Start -->
+				    <section class="feature-categories section">
+				      <div class="container">
+				        <div class="row">
+				          <div class="col-md-4 col-sm-4 col-xs-12">
+				            <div class="feature-item-content">
+				              <img src="assets/img/feature/img1.jpg"  alt="">
+				              <div class="feature-content">
+				                <div class="banner-text">
+				                  <h4>Men Sale</h4>
+				                  <p>New Collection</p>
+				                </div>                
+				                <a href="#" class="btn btn-common">Shop Now</a>
+				              </div>
+				            </div>
+				          </div>         
+				          <div class="col-md-4 col-sm-4 col-xs-12">
+				            <div class="feature-item-content">
+				              <img src="assets/img/feature/img3.jpg"  alt="">
+				              <div class="feature-content">
+				                <div class="banner-text">
+				                  <h4>Women's</h4>
+				                  <p>Upt <span>40%</span> OFF</p>
+				                </div>                 
+				                <a href="#" class="btn btn-common">Shop Now</a>
+				              </div>
+				            </div>
+				          </div>
+				           <div class="col-md-4 col-sm-4 col-xs-12">
+				            <div class="feature-item-content mb-30">
+				              <img src="assets/img/feature/img2.jpg"  alt="">
+				              <div class="feature-content">
+				                <div class="banner-text accessories">
+				                  <h4>Women's Backpacks</h4>
+				                  <p>View Collection</p>
+				                </div>
+				                <a href="#" class="btn btn-common">Shop Now</a>
+				              </div>
+				            </div>
+				            <div class="feature-item-content">
+				              <img src="assets/img/feature/img4.jpg"  alt="">
+				              <div class="feature-content">
+				                <div class="banner-text accessories">
+				                  <h4>Men's sunglasses</h4>
+				                  <p>View Collection</p>
+				                </div>
+				                <a href="#" class="btn btn-common">Shop Now</a>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </section>
+				    <!-- Feature ctg Section End -->
+
+				    <!-- Shop Collection Section Start -->
+				    <section id="shop-collection">
+				      <div class="container">
+				        <h1 class="section-title">New Arrivals</h1>
+				        <hr class="lines">
+				        <div class="row">
+				          <div class="col-md-3 col-sm-6 col-xs-12">
+				            <div class="shop-product">
+				              <div class="product-box">
+				                <a href="#"><img src="assets/img/products/img-01.jpg"  alt=""></a>
+				                <div class="cart-overlay">
+				                </div>
+				                <span class="sticker new"><strong>NEW</strong></span>
+				                <div class="actions">
+				                  <div class="add-to-links">                     
+				                      <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                      <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                      <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>
+				              </div>
+				              <div class="product-info">
+				                <h4 class="product-title"><a href="#">Qui Ratione Volup</a></h4>  
+				                <div class="align-items">
+				                  <div class="pull-left">
+				                    <span class="price">$49.00</span>
+				                  </div>
+				                  <div class="pull-right">
+				                    <div class="reviews-icon">
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="fa fa-star-o"></i>
+				                      <i class="fa fa-star-o"></i>
+				                    </div>
+				                  </div>
+				                </div> 
+				              </div>
+				            </div>             
+				          </div>
+				          <div class="col-md-3 col-sm-6 col-xs-12">
+				            <div class="shop-product">
+				              <div class="product-box">
+				                <a href="#"><img src="assets/img/products/img-02.jpg"  alt=""></a>
+				                <div class="cart-overlay">
+				                </div>
+				                <span class="sticker discount"><strong>-40%</strong></span>
+				                <div class="actions">
+				                  <div class="add-to-links">
+				                    <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                    <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                    <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>             
+				              </div>
+				              <div class="product-info">
+				                <h4 class="product-title"><a href="#">Eius Modi Tempo</a></h4>  
+				                <div class="align-items">
+				                  <div class="pull-left">
+				                    <span class="price">$59.00</span>
+				                  </div>
+				                  <div class="pull-right">
+				                    <div class="reviews-icon">
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="fa fa-star-o"></i>
+				                    </div>
+				                  </div>
+				                </div> 
+				              </div>
+				            </div>            
+				          </div>
+				          <div class="col-md-3 col-sm-6 col-xs-12">
+				            <div class="shop-product">
+				              <div class="product-box">
+				                <a href="#"><img src="assets/img/products/img-03.jpg"  alt=""></a>
+				                <div class="cart-overlay">
+				                </div>
+				                <div class="actions">
+				                  <div class="add-to-links">
+				                    <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                    <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                    <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>             
+				              </div>
+				              <div class="product-info">
+				                <h4 class="product-title"><a href="#">Quia Voluptas Sit</a></h4>  
+				                <div class="align-items">
+				                  <div class="pull-left">
+				                    <span class="price">$69.00 <del>$79.00</del></span>
+				                  </div>
+				                  <div class="pull-right">
+				                    <div class="reviews-icon">
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="fa fa-star-o"></i>
+				                      <i class="fa fa-star-o"></i>
+				                    </div>
+				                  </div>
+				                </div> 
+				              </div>
+				            </div>            
+				          </div>
+				          <div class="col-md-3 col-sm-6 col-xs-12">
+				            <div class="shop-product">
+				              <div class="product-box">
+				                <a href="#"><img src="assets/img/products/img-04.jpg"  alt=""></a>
+				                <div class="cart-overlay">
+				                </div>
+				                <span class="sticker sale"><strong>Sale</strong></span>
+				                <div class="actions">
+				                  <div class="add-to-links">
+				                    <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                    <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                    <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>             
+				              </div>
+				              <div class="product-info">
+				                <h4 class="product-title"><a href="#">An Tium Lores Eos</a></h4>  
+				                <div class="align-items">
+				                  <div class="pull-left">
+				                    <span class="price">$39.00</span>
+				                  </div>
+				                  <div class="pull-right">
+				                    <div class="reviews-icon">
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="fa fa-star-o"></i>
+				                      <i class="fa fa-star-o"></i>
+				                      <i class="fa fa-star-o"></i>
+				                    </div>
+				                  </div>
+				                </div> 
+				              </div>
+				            </div>            
+				          </div>
+				          <div class="col-md-3 col-sm-6 col-xs-12">
+				            <div class="shop-product">
+				              <div class="product-box">
+				                <a href="#"><img src="assets/img/products/img-05.jpg"  alt=""></a>
+				                <div class="cart-overlay">
+				                </div>
+				                <span class="sticker sale"><strong>Sale</strong></span>
+				                <div class="actions">
+				                  <div class="add-to-links">
+				                    <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                    <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                    <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>             
+				              </div>
+				              <div class="product-info">
+				                <h4 class="product-title"><a href="#">Magni Dolores Eos</a></h4>  
+				                <div class="align-items">
+				                  <div class="pull-left">
+				                    <span class="price">$69.00</span>
+				                  </div>
+				                  <div class="pull-right">
+				                    <div class="reviews-icon">
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="fa fa-star-o"></i>
+				                      <i class="fa fa-star-o"></i>
+				                    </div>
+				                  </div>
+				                </div> 
+				              </div>
+				            </div>            
+				          </div>
+				          <div class="col-md-3 col-sm-6 col-xs-12">
+				            <div class="shop-product">
+				              <div class="product-box">
+				                <a href="#"><img src="assets/img/products/img-06.jpg"  alt=""></a>
+				                <div class="cart-overlay">
+				                </div>
+				                <div class="actions">
+				                  <div class="add-to-links">
+				                    <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                    <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                    <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>             
+				              </div>
+				              <div class="product-info">
+				                <h4 class="product-title"><a href="#">Natur Aut Odit Aut</a></h4>  
+				                <div class="align-items">
+				                  <div class="pull-left">
+				                    <span class="price">$39.00 <del>$79.00</del></span>
+				                  </div>
+				                  <div class="pull-right">
+				                    <div class="reviews-icon">
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="fa fa-star-o"></i>
+				                    </div>
+				                  </div>
+				                </div> 
+				              </div>
+				            </div>             
+				          </div>
+				          <div class="col-md-3 col-sm-6 col-xs-12">
+				            <div class="shop-product">
+				              <div class="product-box">
+				                <a href="#"><img src="assets/img/products/img-07.jpg"  alt=""></a>
+				                <div class="cart-overlay">
+				                </div>
+				                <span class="sticker new"><strong>NEW</strong></span>
+				                <div class="actions">
+				                  <div class="add-to-links">
+				                    <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                    <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                    <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>             
+				              </div>
+				              <div class="product-info">
+				                <h4 class="product-title"><a href="#">Nisi Ut Aliqu</a></h4>  
+				                <div class="align-items">
+				                  <div class="pull-left">
+				                    <span class="price">$56.00</span>
+				                  </div>
+				                  <div class="pull-right">
+				                    <div class="reviews-icon">
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="fa fa-star-o"></i>
+				                      <i class="fa fa-star-o"></i>
+				                      <i class="fa fa-star-o"></i>
+				                    </div>
+				                  </div>
+				                </div> 
+				              </div>
+				            </div>             
+				          </div>
+				          <div class="col-md-3 col-sm-6 col-xs-12">
+				            <div class="shop-product">
+				              <div class="product-box">
+				                <a href="#"><img src="assets/img/products/img-08.jpg"  alt=""></a>
+				                <div class="cart-overlay">
+				                </div>
+				                <div class="actions">
+				                  <div class="add-to-links">
+				                    <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                    <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                    <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>             
+				              </div>
+				              <div class="product-info">
+				                <h4 class="product-title"><a href="#">Beatae Vitae Dicta</a></h4>  
+				                <div class="align-items">
+				                  <div class="pull-left">
+				                    <span class="price">$79.00</span>
+				                  </div>
+				                  <div class="pull-right">
+				                    <div class="reviews-icon">
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="i-color fa fa-star"></i>
+				                      <i class="fa fa-star-o"></i>
+				                      <i class="fa fa-star-o"></i>
+				                    </div>
+				                  </div>
+				                </div> 
+				              </div>
+				            </div>             
+				          </div>
+				        </div>
+				      </div>
+				    </section>
+				    <!-- Shop Collection Section End -->
+
+				    <!--  Discount Product Start  -->
+				    <section class="discount-product-area">
+				      <div class="container">
+				        <div class="row">
+				          <div class="discount-text">
+				            <p>New Trendy Collection</p>
+				            <h3>Shop Collection 50% offer!</h3>
+				            <a href="#" class="btn btn-common btn-large">View Deals</a>
+				          </div>
+				        </div>
+				      </div>
+				    </section>
+				    <!--  Discount Product End  -->
+
+				    <!-- New Products Section Start-->
+				    <section class="section">
+				      <div class="container">
+				        <h1 class="section-title">Featured Products</h1>
+				        <hr class="lines">
+				        <div class="row">
+				          <div class="col-md-12">
+				            <div id="new-products" class="owl-carousel">
+				              <div class="item">
+				                <div class="shop-product">
+				                  <div class="product-box">
+				                    <a href="#"><img src="assets/img/feature-products/img-01.jpg"  alt=""></a>
+				                    <div class="cart-overlay">
+				                    </div>
+				                     <span class="sticker new"><strong>NEW</strong></span>
+				                    <div class="actions">
+				                      <div class="add-to-links">
+				                        <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                        <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                        <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                      </div>
+				                    </div>             
+				                  </div>
+				                  <div class="product-info">
+				                    <h4 class="product-title"><a href="#">Nisi Ut Aliqu</a></h4>  
+				                    <div class="align-items">
+				                      <div class="pull-left">
+				                        <span class="price">$49.00</span>
+				                      </div>
+				                      <div class="pull-right">
+				                        <div class="reviews-icon">
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="fa fa-star-o"></i>
+				                          <i class="fa fa-star-o"></i>
+				                        </div>
+				                      </div>
+				                    </div> 
+				                  </div>
+				                </div> 
+				              </div>
+				              <div class="item">
+				                <div class="shop-product">
+				                  <div class="product-box">
+				                    <a href="#"><img src="assets/img/feature-products/img-02.jpg"  alt=""></a>
+				                    <div class="cart-overlay">
+				                    </div>                   
+				                    <div class="actions">
+				                      <div class="add-to-links">
+				                        <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                        <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                        <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                      </div>
+				                    </div>             
+				                  </div>
+				                  <div class="product-info">
+				                    <h4 class="product-title"><a href="#">Eius Modi Tempo</a></h4>  
+				                    <div class="align-items">
+				                      <div class="pull-left">
+				                        <span class="price">$59.00 <del>$79.00</del></span>
+				                      </div>
+				                      <div class="pull-right">
+				                        <div class="reviews-icon">
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="fa fa-star-o"></i>
+				                        </div>
+				                      </div>
+				                    </div> 
+				                  </div>
+				                </div> 
+				              </div>
+				              <div class="item">
+				                <div class="shop-product">
+				                  <div class="product-box">
+				                    <a href="#"><img src="assets/img/feature-products/img-03.jpg"  alt=""></a>
+				                    <div class="cart-overlay">
+				                    </div>                    
+				                    <span class="sticker sale"><strong>Sale</strong></span>
+				                    <div class="actions">
+				                  <div class="add-to-links">
+				                    <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                    <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                    <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                  </div>
+				                </div>             
+				                  </div>
+				                  <div class="product-info">
+				                    <h4 class="product-title"><a href="#">Quia Voluptas Sit</a></h4>  
+				                    <div class="align-items">
+				                      <div class="pull-left">
+				                        <span class="price">$68.00</span>
+				                      </div>
+				                      <div class="pull-right">
+				                        <div class="reviews-icon">
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="fa fa-star-o"></i>
+				                          <i class="fa fa-star-o"></i>
+				                        </div>
+				                      </div>
+				                    </div> 
+				                  </div>
+				                </div> 
+				              </div>
+				              <div class="item">
+				                <div class="shop-product">
+				                  <div class="product-box">
+				                    <a href="#"><img src="assets/img/feature-products/img-04.jpg"  alt=""></a>
+				                    <div class="cart-overlay">
+				                    </div>
+				                    <div class="actions">
+				                      <div class="add-to-links">
+				                        <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                        <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                        <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                      </div>
+				                    </div>             
+				                  </div>
+				                  <div class="product-info">
+				                    <h4 class="product-title"><a href="#">An Tium Lores Eos</a></h4>  
+				                    <div class="align-items">
+				                      <div class="pull-left">
+				                        <span class="price">$59.00 <del>$69.00</del></span>
+				                      </div>
+				                      <div class="pull-right">
+				                        <div class="reviews-icon">
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="fa fa-star-o"></i>
+				                          <i class="fa fa-star-o"></i>
+				                          <i class="fa fa-star-o"></i>
+				                        </div>
+				                      </div>
+				                    </div> 
+				                  </div>
+				                </div> 
+				              </div>
+				              <div class="item">
+				                <div class="shop-product">
+				                  <div class="product-box">
+				                    <a href="#"><img src="assets/img/feature-products/img-05.jpg"  alt=""></a>
+				                    <div class="cart-overlay">
+				                    </div>
+				                    <span class="sticker discount"><strong>-40%</strong></span>
+				                    <div class="actions">
+				                      <div class="add-to-links">
+				                        <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                        <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                        <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                      </div>
+				                    </div>             
+				                  </div>
+				                  <div class="product-info">
+				                    <h4 class="product-title"><a href="#">Magni Dolores Eos</a></h4>  
+				                    <div class="align-items">
+				                      <div class="pull-left">
+				                        <span class="price">$79.00</span>
+				                      </div>
+				                      <div class="pull-right">
+				                        <div class="reviews-icon">
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="fa fa-star-o"></i>
+				                          <i class="fa fa-star-o"></i>
+				                        </div>
+				                      </div>
+				                    </div> 
+				                  </div>
+				                </div> 
+				              </div>
+				              <div class="item">
+				                <div class="shop-product">
+				                  <div class="product-box">
+				                    <a href="#"><img src="assets/img/feature-products/img-06.jpg"  alt=""></a>
+				                    <div class="cart-overlay">
+				                    </div>
+				                    <div class="actions">
+				                      <div class="add-to-links">
+				                        <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                        <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                        <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                      </div>
+				                    </div>             
+				                  </div>
+				                  <div class="product-info">
+				                    <h4 class="product-title"><a href="#">Natur Aut Odit Aut</a></h4>  
+				                    <div class="align-items">
+				                      <div class="pull-left">
+				                        <span class="price">$69.00</span>
+				                      </div>
+				                      <div class="pull-right">
+				                        <div class="reviews-icon">
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="fa fa-star-o"></i>
+				                        </div>
+				                      </div>
+				                    </div> 
+				                  </div>
+				                </div>  
+				              </div>
+				              <div class="item">
+				                <div class="shop-product">
+				                  <div class="product-box">
+				                    <a href="#"><img src="assets/img/feature-products/img-07.jpg"  alt=""></a>
+				                    <div class="cart-overlay">
+				                    </div>
+				                    <span class="sticker sale"><strong>Sale</strong></span>
+				                    <div class="actions">
+				                      <div class="add-to-links">
+				                        <a href="#" class="btn-cart"><i class="icon-basket"></i></a>
+				                        <a href="#" class="btn-compare"><i class="icon-refresh"></i></a>
+				                        <a  class="btn-quickview md-trigger" data-modal="modal-3"><i class="icon-eye"></i></a>
+				                      </div>
+				                    </div>             
+				                  </div>
+				                  <div class="product-info">
+				                    <h4 class="product-title"><a href="#">Qui Ratione Volup</a></h4>  
+				                    <div class="align-items">
+				                      <div class="pull-left">
+				                        <span class="price">$56.00</span>
+				                      </div>
+				                      <div class="pull-right">
+				                        <div class="reviews-icon">
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="i-color fa fa-star"></i>
+				                          <i class="fa fa-star-o"></i>
+				                          <i class="fa fa-star-o"></i>
+				                        </div>
+				                      </div>
+				                    </div> 
+				                  </div>
+				                </div>
+				              </div>
+				            </div>
+				          </div>                              
+				        </div>
+				      </div>
+				    </section>
+				    <!-- New Products Section End -->
+
+				    <!--  Content Area  Section Start -->
+				    <section id="content-area">
+				      <div class="container">
+				        <div class="hero-land clearfix">
+				          <div class="landing caption">
+				            <h2>All Global Brands in Single Place</h2>
+				            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem, ducimus reprehenderit sed molestiae iure sapiente accusamus incidunt minima expedita velit assumenda vitae libero. Eaque nostrum magni architecto, corporis doloremque!</p>
+				            <p>
+				              <a href="category.html" class="btn btn-common">Explore</a>
+				            </p>
+				          </div>
+				        </div>
+				      </div>
+				    </section>
+				    <!--  Content Area  Section End -->
+
+				    <!-- Services Section Starts -->
+				    <section id="services" class="section">
+				      <!-- Container Starts -->
+				      <div class="container">
+				        <div class="row">          
+				          <!-- Start Service-->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-plane"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Worldwide Shipping
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				          <!-- Start Service-->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-support"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Premium Support
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				          <!-- Start Service-->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-basket-loaded"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Secure Checkout
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				          <!-- Start Service-->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-globe"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Multiple Languages
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				          <!-- Start Service-->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-screen-tablet"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Fully Responsive
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				          <!-- Start Service -->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-pencil"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Multiple Skin
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				          <!-- Start Service-->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-settings"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Completely Customizable 
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				          <!-- Start Service-->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-wallet"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Awesome Layout 
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				          <!-- Start Service -->
+				          <div class="col-md-4 col-sm-6">
+				            <div class="services-box">
+				              <div class="services-icon">
+				                <i class="icon-notebook"></i>
+				              </div>
+				              <div class="services-content">
+				                <h4>
+				                  Full Documented 
+				                </h4>
+				                <p>
+				                  Lorem ipsum dolor sit amet isse potenti. Vesquam ante aliquet lacusemper elit.
+				                </p>
+				              </div>
+				            </div>
+				          </div>
+				          <!-- End Service-->
+				        </div>
+				      </div>
+				      <!-- Container Ends -->
+				    </section>
+				    <!-- Services Section Ends -->
+
+				    <!-- Start Testimonial Section  -->        
+				    <div class="testimonial section">
+				      <div class="container">
+				        <div class="row">
+				          <!-- Testimonial section  -->
+				          <div class="testimonials-carousel owl-carousel">
+				            <div class="item">
+				              <div class="testimonial-item">
+				                <div class="img">
+				                  <a href="#"><img src="assets/img/testimonial/img1.jpg"  alt=""></a>
+				                </div>
+				                <div class="datils">                
+				                  <p>“ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe porro neque a nam nulla quos atque reprehenderit eius corrupti amet! <br> hic et quidem. Dignissimos ad maxime velit unde inventore quasi vero dolorem. “</p>
+				                  <h5>Jared Erondu</h5> 
+				                  <span>- CEO & art director</span>
+				                </div>
+				              </div>
+				            </div>                
+				            <div class="item">
+				              <div class="testimonial-item">
+				                <div class="img">
+				                  <a href="#"><img src="assets/img/testimonial/img2.jpg"  alt=""></a>
+				                </div>
+				                <div class="datils">                
+				                  <p>“ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe porro neque a nam nulla quos atque reprehenderit eius corrupti amet! <br> hic et quidem. Dignissimos ad maxime velit unde inventore quasi vero dolorem. “</p>
+				                  <h5>Cadic Vegeta</h5> 
+				                  <span>- Graphic Design</span>
+				                </div>
+				              </div>
+				            </div>
+				            <div class="item">
+				              <div class="testimonial-item">
+				                <div class="img">
+				                  <a href="#"><img src="assets/img/testimonial/img3.jpg"  alt=""></a>
+				                </div>
+				                <div class="datils">                
+				                  <p>“ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe porro neque a nam nulla quos atque reprehenderit eius corrupti amet! <br> hic et quidem. Dignissimos ad maxime velit unde inventore quasi vero dolorem. “</p>
+				                  <h5>Jonathan Beri</h5> 
+				                  <span>- Web Developer</span>
+				                </div>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				    <!-- End Testimonial Section  -->
+
+				    <!-- Latest Blog Section Start -->
+				    <section class="latest-blog section"> 
+				      <div class="container">
+				        <h1 class="section-title">Latest Blog</h1>
+				        <hr class="lines">
+				        <div class="row">
+				          <div class="col-md-4 col-sm-6 col-xs-12">
+				            <div class="blog-item">
+				              <div class="blog-img">
+				                <a href="blog-detail.html">
+				                  <img src="assets/img/blog/img1.jpg"  alt="">
+				                </a>
+				                <div class="mask">
+				                </div>
+				              </div>
+				              <div class="blog-info">
+				                <div class="post-date">16 April</div>
+				                <h3><a href="blog-detail.html">Where Trends Going Next</a></h3>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In atque, qui cum voluptatem quibusdam dolore veniam....</p>
+				                <a href="blog-detail.html" class="readmore">Read More</a>
+				              </div>
+				            </div>
+				          </div>
+				          <div class="col-md-4 col-sm-6 col-xs-12">
+				            <div class="blog-item">
+				              <div class="blog-img">
+				                <a href="blog-detail.html">
+				                  <img src="assets/img/blog/img2.jpg"  alt="">
+				                </a>
+				                <div class="mask">
+				                </div>
+				              </div>
+				              <div class="blog-info">
+				                <div class="post-date">16 April</div>
+				                <h3><a href="blog-detail.html">Ellie Goulding – High For This</a></h3>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In atque, qui cum voluptatem quibusdam dolore veniam....</p>
+				                <a href="blog-detail.html" class="readmore">Read More</a>
+				              </div>
+				            </div>
+				          </div>
+				          <div class="col-md-4 col-sm-6 col-xs-12">
+				            <div class="blog-item">
+				              <div class="blog-img">
+				                <a href="blog-detail.html">
+				                  <img src="assets/img/blog/img3.jpg"  alt="">
+				                </a>
+				                <div class="mask">
+				                </div>
+				              </div>
+				              <div class="blog-info">
+				                <div class="post-date">16 April</div>
+				                <h3><a href="blog-detail.html">Best Photography of 2017</a></h3>
+				                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In atque, qui cum voluptatem quibusdam dolore veniam....</p>
+				                <a href="blog-detail.html" class="readmore">Read More</a>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </section>
+				    <!-- Latest Blog Section End -->
+
+				    <!-- Start Client Section -->
+				    <div class="client section">
+				      <div class="container">
+				        <div class="row">
+				          <div id="client-logo" class="owl-carousel">
+				            <div class="client-logo item">
+				              <a href="#">
+				                <img src="assets/img/clients/logo-01.png" alt="" />
+				              </a>
+				            </div>
+				            <div class="client-logo item">
+				              <a href="#">
+				                <img src="assets/img/clients/logo-02.png" alt="" />
+				              </a>
+				            </div>
+				            <div class="client-logo item">
+				              <a href="#">
+				                <img src="assets/img/clients/logo-03.png" alt="" />
+				              </a>
+				            </div>
+				            <div class="client-logo item">
+				              <a href="#">
+				                <img src="assets/img/clients/logo-04.png" alt="" />
+				              </a>
+				            </div>
+				            <div class="client-logo item">
+				              <a href="#">
+				                <img src="assets/img/clients/logo-05.png" alt="" />
+				              </a>
+				            </div>
+				            <div class="client-logo item">
+				              <a href="#">
+				                <img src="assets/img/clients/logo-06.png" alt="" />
+				              </a>
+				            </div>
+				            <div class="client-logo item">
+				              <a href="#">
+				                <img src="assets/img/clients/logo-07.png" alt="" />
+				              </a>
+				            </div>
+				            <div class="client-logo item">
+				              <a href="#">
+				                <img src="assets/img/clients/logo-08.png" alt="" />
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				    <!-- End Client Section -->		
+                </pre>
+
+            </section>
+
+
+            <section id="css-structure">
+                <h2 class="title">CSS Files and Structure</h2>
+                <p class="fifteen">These are the css files that are loaded into templates in <strong>Head Section</strong>.</p>
+                <pre class="brush: html">
+                        <!-- Bootstrap CSS -->
+					    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">    
+					    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">    
+					    <!-- Font Awesome CSS -->
+					    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" type="text/css">   
+					    <!-- Line Icons CSS -->
+					    <link rel="stylesheet" href="assets/fonts/line-icons/line-icons.css" type="text/css">      
+					    <!-- Main Styles -->
+					    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+					    <!-- Rev Slider Css -->
+					    <link rel="stylesheet" href="assets/extras/settings.css" type="text/css">
+					    <!-- Animate CSS -->
+					    <link rel="stylesheet" href="assets/extras/animate.css" type="text/css">    
+					    <!-- Owl Carousel -->
+					    <link rel="stylesheet" href="assets/extras/owl.carousel.css" type="text/css">
+					    <link rel="stylesheet" href="assets/extras/owl.theme.css" type="text/css">
+					    <!-- Range Slider -->
+					    <link rel="stylesheet" href="assets/extras/ion.rangeSlider.css" type="text/css">
+					    <link rel="stylesheet" href="assets/extras/ion.rangeSlider.skinFlat.css" type="text/css">
+					    <!-- Modals Effects -->
+					    <link rel="stylesheet" href="assets/extras/component.css" type="text/css">
+					    <!-- Slick Slider -->
+					    <link rel="stylesheet" href="assets/extras/slick.css" type="text/css">
+					    <link rel="stylesheet" href="assets/extras/slick-theme.css" type="text/css">
+					    <!-- Nivo Lightbox Css -->
+					    <link rel="stylesheet" href="assets/extras/nivo-lightbox.css" type="text/css">    
+					    <!-- Color switcher CSS -->
+					    <link rel="stylesheet" href="assets/css/color-switcher.css" type="text/css">
+					    <!-- Slicknav Css -->
+					    <link rel="stylesheet" href="assets/css/slicknav.css" type="text/css">  
+					    <!-- Responsive CSS Styles -->
+					    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+		            </pre>
+
+                <h2 class="title">Google Web Fonts</h2>
+
+                <p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that suits you best.</p>
+
+                <pre class="brush:html">		                
+						<!-- Google Font
+						=========================== -->
+						@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,700');
+		            </pre>
+
+
+                <h2 class="title">Fontface Fonts</h2>
+
+                <p>By default, the template loads this font from from local for heading texts, you can change the font with the one that suits you best.</p>
+
+                <pre class="brush:html">                        
+					<!-- Fonts -->
+				    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" type="text/css">
+				    <link rel="stylesheet" href="assets/fonts/line-icons/line-icons.css" type="text/css">
+                </pre>
+
+
+                <p class="twenty">You can change fonts from <strong>main.css</strong></p>
+
+                <pre class="brush:css">
+                   	body{	
+				    	font-family: 'Open Sans', sans-serif;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 24px;
+						overflow-x: hidden; /* fixing the overflow duting animation */
+					}
+					img{
+						max-width: 100%;
+					}
+
+					h1, h2, h3, h4, h5, h6  {
+						margin-top: 0;
+						margin-bottom: 0;    	
+						font-family: 'Josefin Sans', sans-serif;
+						font-weight: 700;
+					}
+					h3 {
+						font-size: 1.6em;
+						line-height: 1.4em;
+					}
+					p{
+						font-size: 14px;
+						font-family: 'Open Sans', sans-serif;
+						margin: 0;
+						line-height: 24px;
+						font-weight: 400;
+					}
+		        </pre>
+
+
+            </section>
+
+            <section id="javascript">
+                <h2 class="title">Javascript Files and Structure</h2>
+
+                <p class="fifteen">These are the list of Javascript files that are loaded into templates in end of the <strong>Body Section</strong>.
+
+                    <pre class="brush: html">
+
+						<!-- All js here -->
+					    <script type="text/javascript" src="assets/js/jquery-min.js"></script>      
+					    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+					    <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script> 
+					    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+					    <script type="text/javascript" src="assets/js/ion.rangeSlider.js"></script>
+					    <script type="text/javascript" src="assets/js/modalEffects.js"></script>   
+					    <script type="text/javascript" src="assets/js/classie.js"></script>    
+					    <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+					    <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
+					    <script type="text/javascript" src="assets/js/nivo-lightbox.js"></script>       
+					    <script type="text/javascript" src="assets/js/color-switcher.js"></script>
+					    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+					    <script type="text/javascript" src="assets/js/jquery.slicknav.js"></script>
+					    <script type="text/javascript" src="assets/js/form-validator.min.js"></script>
+					    <script type="text/javascript" src="assets/js/contact-form-script.js"></script> 
+					    <script type="text/javascript" src="assets/js/main.js"></script>    
+
+		            </pre>
+
+            </section>
+
+            <section id="color-presets">
+                <h2 class="title"> Changing The Default Color Preset of Template </h2>
+
+                <p>ShopR comes with multiple color presets you can check color preset files from assets/css->colors folder</p>
+                <p>You can change default color preset by adding color css file in head area like:</p>
+
+                <pre class="brush:html">
+                        <!-- Color CSS Styles  -->
+    					<link rel="stylesheet" type="text/css" href="assets/css/colors/red.css" media="screen" />	
+                    </pre>
+
+            </section>
+
+            <section id="contact-form">
+                <h2 class="title"> Configuring Contact Form </h2>
+
+                <p>open <b>form-process.php</b> file from <b>php</b> folder of template and configure mailer function parameters to get it worked</p>
+
+                <pre class="brush:html">
+                  <!-- Replace You Email Here -->
+                  $EmailTo = "email@gmail.com";
+                </pre>
+
+            </section>
+			
+			<section id="google-map">
+                <h2 class="title">Google Map Settings</h2>
+                <p>open conact page goto JS library section and change the latitude/longitude values</p>
+                <pre class="brush:javascript">
+						var defult = new google.maps.LatLng(23.794456, 90.424553);
+		            </pre>
+            </section>
+
+            <section id="credit">
+                <h2 class="title">Source and Credit</h2>
+                <div class="script-source">
+                    <ul>
+                        <li><a target="_blank" href="http://unsplash.com/">Unsplash</a></li>
+                        <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+                        <li><a target="_blank" href="https://v4-alpha.getbootstrap.com/">Bootstrap Framework</a></li>
+                        <li><a target="_blank" href="http://www.owlgraphic.com/owlcarousel">Owl Carousel</a></li>
+                        <li><a target="_blank" href="https://github.com/gilbitron/Nivo-Lightbox">Nivo-Lightbox</a></li>
+                        <li><a target="_blank" href="http://mynameismatthieu.com/WOW/">Wow</a></li>
+                        <li><a target="_blank" href="http://fontawesome.io/">Font Awesome</a></li>
+                        <li><a target="_blank" href="http://simplelineicons.com/">Simple Line Icons</a></li>
+                        <li><a target="_blank" href="http://daneden.github.io/animate.css/">Animate CSS</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+    <!-- Essential JavaScript Libraries
+		==============================================-->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="syntax-highlighter/scripts/shCore.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+    <script>
+        SyntaxHighlighter.all()
+    </script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
