@@ -35,7 +35,6 @@
         <a href="{{route('dashboard.order.gift')}}"><h3 class="m-3"> Gift Orders</h3></a>
         <p>Pending new gift orders</p>
     </div>
-    
 </div>
 @endcannot
 <div class="animated flipInY col-lg-3 col-md-3 col-sm-6  ">

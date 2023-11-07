@@ -37,7 +37,7 @@ Route::namespace('Backend\Auth\Login')->prefix('dashboard')->name('dashboard.')-
 // Dashboard Welcome
 Route::namespace('Backend\Home')->prefix('dashboard')->name('dashboard.')->middleware('can:dashboard-users')->group(function () {
     Route::get('/home', 'HomeController@index')->name('home');
-});
+}); 
 
 /* User Mamangement */
 Route::namespace('Backend\User')->prefix('dashboard')->name('dashboard.user.')->middleware('can:manage-users')->group(function () {

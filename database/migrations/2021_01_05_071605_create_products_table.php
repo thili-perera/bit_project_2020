@@ -24,7 +24,7 @@ class CreateProductsTable extends Migration
             $table->integer('quantity')->nullable();
             $table->string('weight')->nullable();
             $table->string('description')->nullable();
-            $table->string('content')->nullable();
+            $table->longText('content')->nullable();
             $table->float('regularprice')->nullable();
             $table->float('salesprice')->nullable();
             $table->string('image')->nullable();
